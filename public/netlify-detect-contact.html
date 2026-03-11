@@ -8,23 +8,14 @@
 
   <h2>Netlify Form Detection Helper</h2>
 
-  <!-- 
-    This page exists ONLY so Netlify can detect the form.
-    The action sends the form to a real thank-you page.
-  -->
-
-  <form 
+  <form
     name="contact"
     method="POST"
-    action="/thank-you.html"
     data-netlify="true"
     netlify-honeypot="bot-field"
   >
-
-    <!-- Required hidden input -->
     <input type="hidden" name="form-name" value="contact" />
 
-    <!-- Honeypot spam protection -->
     <p style="display:none;">
       <label>Don’t fill this out:
         <input name="bot-field" />
@@ -52,7 +43,6 @@
     <p>
       <button type="submit">Dummy Submit</button>
     </p>
-
   </form>
 
   <p>Do not delete while debugging Netlify form detection.</p>
