@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Netlify form detection helper</title>
+  </head>
+  <body>
+    <!-- This page only exists so Netlify will detect the form at build-time -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+      <button type="submit">dummy submit</button>
+    </form>
+    <p>Do not delete while debugging Netlify form detection.</p>
+  </body>
+</html>
