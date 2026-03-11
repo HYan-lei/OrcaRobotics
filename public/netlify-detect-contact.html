@@ -1,19 +1,58 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Netlify form detection helper</title>
+    <meta charset="utf-8" />
+    <title>Netlify Form Detection Helper</title>
   </head>
   <body>
-    <!-- This page only exists so Netlify will detect the form at build-time -->
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <h2>Netlify Form Detection Helper</h2>
+
+    <!-- 
+      This page exists ONLY so Netlify can detect the form at build time.
+      The action="/" ensures the POST goes to the site root and avoids 404.
+    -->
+
+    <form
+      name="contact"
+      method="POST"
+      action="/"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <!-- Required hidden input -->
       <input type="hidden" name="form-name" value="contact" />
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-      <input name="bot-field" />
-      <button type="submit">dummy submit</button>
+
+      <!-- Honeypot spam trap -->
+      <p style="display:none;">
+        <label>
+          Don’t fill this out:
+          <input name="bot-field" />
+        </label>
+      </p>
+
+      <p>
+        <label>Name:
+          <input type="text" name="name" />
+        </label>
+      </p>
+
+      <p>
+        <label>Email:
+          <input type="email" name="email" />
+        </label>
+      </p>
+
+      <p>
+        <label>Message:
+          <textarea name="message"></textarea>
+        </label>
+      </p>
+
+      <p>
+        <button type="submit">dummy submit</button>
+      </p>
     </form>
+
     <p>Do not delete while debugging Netlify form detection.</p>
   </body>
 </html>
