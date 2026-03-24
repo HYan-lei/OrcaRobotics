@@ -27,7 +27,7 @@ export const COLORS = {
 export const SEASONS = [
   {
     year: "2025–2026",
-    theme: "INTO THE DEEP",
+    theme: "Decode",
     medal: "🥇",
     events: [
       {
@@ -50,7 +50,7 @@ export const SEASONS = [
   },
   {
     year: "2024–2025",
-    theme: "INTO THE DEEP",
+    theme: "Into the Deep",
     medal: "🥈",
     events: [
       {
@@ -69,7 +69,7 @@ export const SEASONS = [
   },
   {
     year: "2023–2024",
-    theme: "CENTERSTAGE",
+    theme: "Centerstage",
     medal: "🥉",
     events: [
       {
