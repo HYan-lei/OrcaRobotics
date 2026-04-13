@@ -184,7 +184,7 @@ export const OUTREACH_ACTIVITIES = [
 export const IMPACT_STATS = [
   { label: "Students Reached", value: 500, suffix: "+" },
   { label: "Events Hosted", value: 12, suffix: "" },
-  { label: "Seasons Competed", value: 3, suffix: "" }
+  { label: "Seasons Competed", value: 4, suffix: "" }
 ];
 
 export const BLOG_POSTS = [
